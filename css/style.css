@@ -1,0 +1,528 @@
+body {
+  box-sizing: border-box;
+}
+
+:root {
+  --font-family: 'Roboto';
+  --white-color: #ffffff;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('/fonts/roboto-regular.woff2') format('woff2'), url('/fonts/roboto-regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('/fonts/roboto-medium.woff2') format('woff2'), url('/fonts/roboto-medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Roboto', san-serif;
+}
+
+/* global */
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+a,
+button {
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+  max-width: 100%;
+}
+
+/* community */
+
+.container {
+  max-width: 1600px;
+  margin-right: 213px;
+  margin-left: 230px;
+}
+
+.flex {
+  display: flex;
+}
+
+/* header */
+.header {
+  background-image: url(../img/header_img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header__top {
+  display: flex;
+  align-items: center;
+}
+
+.logo-block {
+  margin-right: auto;
+}
+.header__menu {
+  padding-bottom: 5px;
+  display: flex;
+  align-items: center;
+  margin-right: 223px;
+}
+.header__list {
+  display: flex;
+}
+.header__item:not(:last-child) {
+  margin-right: 28px;
+}
+
+.header__link {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--white-color);
+}
+
+.header__btn {
+  display: flex;
+  align-items: center;
+  padding: 15px 36px;
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--white-color);
+  border-radius: 10px;
+  background-color: #f6762c;
+}
+
+.hero {
+  padding-top: 183px;
+  padding-bottom: 246px;
+  padding-right: 53%;
+}
+.hero__descr {
+  margin-bottom: 5px;
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  color: var(--white-color);
+}
+.hero__heading {
+  margin-bottom: 27px;
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 57.33px;
+  line-height: 67px;
+  color: var(--white-color);
+}
+.hero__text {
+  margin-bottom: 40px;
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--white-color);
+  opacity: 0.7;
+}
+.hero__btn {
+  padding: 15px 36px;
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--white-color);
+  border-radius: 10px;
+  background-color: #f6762c;
+}
+
+.menu {
+  padding-top: 115px;
+  padding-bottom: 99px;
+  background-color: #1c1c1c;
+}
+
+.card__item {
+  max-width: 262px;
+  padding: 203px 20px 28px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+  background-color: #312f30;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.card__item:not(:last-child) {
+  margin-right: 31px;
+}
+.img-1 {
+  background-image: url(../img/menu-cook1.jpg);
+}
+.img-2 {
+  background-image: url(../img/menu-cook2.jpg);
+}
+.img-3 {
+  background-image: url(../img/menu-cook3.jpg);
+}
+.img-4 {
+  background-image: url(../img/menu-cook4.jpg);
+}
+
+.card__subtitile {
+  margin-bottom: 13px;
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: var(--white-color);
+}
+
+.card__descr {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: var(--white-color);
+  opacity: 0.7;
+}
+
+.price {
+  padding-bottom: 10px;
+  background-color: #312f30;
+}
+
+.price__descr {
+  position: relative;
+  padding: 163px 50px 150px 680px;
+}
+
+.img-burger::before {
+  content: '';
+  position: absolute;
+  width: 550px;
+  height: 500px;
+  top: 0;
+  left: 0;
+  background-image: url(/img/burger-price.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.price__subtitle {
+  margin-bottom: 25px;
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44.2px;
+  line-height: 52px;
+  color: var(--white-color);
+}
+.price__text {
+  margin-bottom: 16px;
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--white-color);
+  opacity: 0.7;
+}
+
+.prices {
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.prices__sale {
+  margin-right: 6px;
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.1em;
+  color: #f6762c;
+}
+
+.prices__full {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.1em;
+  text-decoration-line: line-through;
+  color: #f6762c;
+  opacity: 0.5;
+}
+
+.price__btn {
+  padding: 15px 37px;
+  border-radius: 10px;
+  background-color: #f6762c;
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--white-color);
+}
+
+.offer {
+  padding-top: 155px;
+  padding-bottom: 100px;
+  background-color: #1c1c1c;
+}
+
+.offer__container {
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.offer__block {
+  width: 555px;
+  min-height: 300px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.offer__block:nth-child(2n + 1) {
+  padding: 60px 20px 60px 290px;
+}
+
+.offer__block:nth-child(2n) {
+  padding: 60px 250px 60px 50px;
+}
+
+.offer_1 {
+  background-image: url(/img/offer-1.jpg);
+}
+.offer_2 {
+  background-image: url(/img/offer-2.jpg);
+}
+.offer_3 {
+  background-image: url(/img/offer-3.jpg);
+}
+.offer_4 {
+  background-image: url(/img/offer-4.jpg);
+}
+
+.offer__title {
+  margin-bottom: 20px;
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 35px;
+  color: var(--white-color);
+}
+
+.offer__descr {
+  margin-bottom: 11px;
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--white-color);
+  opacity: 0.7;
+}
+
+.offer__btn {
+  padding: 13px 36px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: var(--white-color);
+  background-color: #f6762c;
+}
+
+.reviews {
+  padding-top: 177px;
+  
+}
+.reviews__photo {
+  position: relative;
+  width: 58%;
+  margin-right: 50px;
+  padding-left: 239px;
+}
+
+.photo-circle {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.photo_center {
+  border-radius: 50%;
+  
+}
+
+.photo_1 {
+  position: absolute;
+  top: -12px;
+  left: 167px;
+}
+
+.photo_2 {
+  position: absolute;
+  top: -62px;
+  left: 421px;
+}
+
+.photo_3 {
+  position: absolute;
+  bottom: -197px;
+  left: 243px;
+}
+
+.photo_4 {
+  position: absolute;
+  bottom: -147px;
+  right: 162px;
+}
+
+.reviews__descr {
+  width: 30%;
+  flex-direction: column;
+  padding-top: 100px;
+
+}
+
+.reviews__text {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: var(--white-color);
+  opacity: 0.7;
+}
+
+.reviews__autor {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: var(--white-color);
+}
+
+.reviews__citizenship {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: var(--white-color);
+  opacity: 0.7;
+}
+
+.download {
+  background-color: #312f30;
+}
