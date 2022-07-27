@@ -506,22 +506,30 @@ img {
 }
 
 .reviews {
-  padding-top: 177px;
-  padding-bottom: 92px;
+  padding-top: 135px;
+  padding-bottom: 94px;
 }
 
 .reviews__photo {
   position: relative;
   width: 58%;
-  height: 300px;
+  height: 360px;
   padding-left: 239px;
 }
 
-.reviews__photo {
+/* .reviews__photo {
   background-image: url(../img/Ellipse-1.png), url(../img/Ellipse-2.png);
   background-repeat: no-repeat, no-repeat;
   background-size: auto, contain;
   background-position: 57% 17%, 50% 50%;
+} */
+
+.reviews__photo {
+  padding-top: 120px;
+  background-image: url(../img/Ellipse.png);
+  background-repeat: no-repeat;
+  background-size:  auto;
+  background-position: 60% 0%;
 }
 
 .photo-circle {
@@ -531,27 +539,28 @@ img {
 
 .photo_center {
   border-radius: 50%;
+  top:50px;
 }
 
 .photo_1 {
-  top: -12px;
+  top: 35px;
   left: 167px;
 }
 
 .photo_2 {
-  top: -62px;
+  top: -15px;
   left: 421px;
 }
 
 .photo_3 {
   position: absolute;
-  bottom: -5px;
+  bottom: 3px;
   left: 243px;
 }
 
 .photo_4 {
   position: absolute;
-  bottom: 36px;
+  bottom: 41px;
   right: 142px;
 }
 
@@ -608,8 +617,8 @@ img {
 
 .download {
   background-color: #312f30;
-  padding-top: 61px;
-  padding-bottom: 59px;
+  padding-top: 62px;
+  padding-bottom: 58px;
 }
 
 .download__container {
